@@ -2,7 +2,7 @@ package dev.evanishyn.entities;
 
 public class Artwork {
     private int id;
-    private String artistIntials;
+    private String artistInitials;
     private String medium;
     private int price;
 
@@ -10,9 +10,9 @@ public class Artwork {
 
     }
 
-    public Artwork(int id, String artistIntials, String medium, int price) {
+    public Artwork(int id, String artistInitials, String medium, int price) {
         this.id = id;
-        this.artistIntials = artistIntials;
+        this.artistInitials = artistInitials;
         this.medium = medium;
         this.price = price;
     }
@@ -25,12 +25,12 @@ public class Artwork {
         this.id = id;
     }
 
-    public String getArtistIntials() {
-        return artistIntials;
+    public String getArtistInitials() {
+        return artistInitials;
     }
 
-    public void setArtistIntials(String artistIntials) {
-        this.artistIntials = artistIntials;
+    public void setArtistInitials(String artistInitials) {
+        this.artistInitials = artistInitials;
     }
 
     public String getMedium() {
