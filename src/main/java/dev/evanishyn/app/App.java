@@ -20,7 +20,9 @@ public class App {
         GetSpecificArtworkHandler getSpecificArtwork = new GetSpecificArtworkHandler();
         GetAllArtworkHandler getAllArtwork = new GetAllArtworkHandler();
 
-        app.get()
+        app.get("/artwork", getAllArtwork);
+        app.get("/artwork/{id}", getSpecificArtwork);
+        app.post("/artwork", createArtEntry);
 
     }
 }
