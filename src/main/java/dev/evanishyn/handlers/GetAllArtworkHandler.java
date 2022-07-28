@@ -10,8 +10,11 @@ import org.jetbrains.annotations.NotNull;
 public class GetAllArtworkHandler implements Handler {
     @Override
     public void handle(@NotNull Context ctx) throws Exception{
+//        ctx.result("Greetings, Art Nerd!");
+
         Gson gson = new Gson();
         String json = gson.toJson(App.artworkList);
+        ctx.result(json);
 
     }
 

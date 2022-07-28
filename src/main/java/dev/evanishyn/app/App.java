@@ -22,7 +22,8 @@ public class App {
 
         app.get("/artwork", getAllArtwork);
         app.get("/artwork/{id}", getSpecificArtwork);
-        app.post("/artwork", createArtEntry);
+        app.post("/artwork/new", createArtEntry);
 
+        app.start();
     }
 }

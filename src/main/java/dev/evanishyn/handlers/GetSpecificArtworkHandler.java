@@ -13,6 +13,7 @@ public class GetSpecificArtworkHandler implements Handler {
     @Override
     public void handle(@NotNull Context ctx) throws Exception{
         int id = Integer.parseInt(ctx.pathParam("id"));
+//        ctx.result("Is this what you were looking for?");
 
         Artwork artwork;
 
@@ -25,6 +26,8 @@ public class GetSpecificArtworkHandler implements Handler {
                 return;
             }
         }
+
+
         ctx.status(404);
         ctx.result("Artwork not found!");
 
